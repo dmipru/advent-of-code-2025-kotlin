@@ -2,14 +2,18 @@ plugins {
     kotlin("jvm") version "2.2.21"
 }
 
-sourceSets {
-    main {
-        kotlin.srcDir("src")
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
     }
 }
 
-tasks {
-    wrapper {
-        gradleVersion = "9.2.1"
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        kotlin.srcDir("src")
     }
 }

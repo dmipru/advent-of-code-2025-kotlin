@@ -1,25 +1,44 @@
-# advent-of-code-2025-kotlin
+# advent-of-code-2024-kotlin
 
-Welcome to the Advent of Code[^aoc] Kotlin project created by [dmipru][github] using the [Advent of Code Kotlin Template][template] delivered by JetBrains.
+This repository contains my solutions for [Advent of Code 2025](https://adventofcode.com/2025)
+in [Kotlin](https://kotlinlang.org).
 
-In this repository, dmipru is about to provide solutions for the puzzles using [Kotlin][kotlin] language.
+## How to run solutions
 
-If you're stuck with Kotlin-specific questions or anything related to this template, check out the following resources:
+> [!NOTE]
+>
+> All task input files (`src/*.txt`) and test data are excluded from the repository with `.gitignore` – we should not
+> post them publicly, as [Eric Wastl requested for](https://twitter.com/ericwastl/status/1465805354214830081).
 
-- [Kotlin docs][docs]
-- [Kotlin Slack][slack]
-- Template [issue tracker][issues]
+Before running a day file bring your input into the `src` folder.  
+For the most days it's going to be just 2 files `DayXX.txt` and `DayXX_test.txt` but there are exceptions where more
+input files required.
+See inside interested day for exact required input files.  
+See more about project structure in [project template](#project-template).
 
+**Example**
 
-[^aoc]:
-    [Advent of Code][aoc] – An annual event of Christmas-oriented programming challenges started December 2015.
-    Every year since then, beginning on the first day of December, a programming puzzle is published every day for twenty-five days.
-    You can solve the puzzle and provide an answer using the language of your choice.
+```
+.
+├── README.md               README file
+│   ....
+└── src
+    ├── Day01.kt            Day 01 implementation
+    ├── Utils.kt            A set of utility methods shared across your days
+    │                       
+    │                       (create those files manually)
+    ├── Day01.txt           Day 01 input data
+    └── Day01_test.txt      Day 01 test input data
+```
 
-[aoc]: https://adventofcode.com
-[docs]: https://kotlinlang.org/docs/home.html
-[github]: https://github.com/dmipru
-[issues]: https://github.com/kotlin-hands-on/advent-of-code-kotlin-template/issues
-[kotlin]: https://kotlinlang.org
-[slack]: https://surveys.jetbrains.com/s3/kotlin-slack-sign-up
-[template]: https://github.com/kotlin-hands-on/advent-of-code-kotlin-template
+## About Advent of Code
+
+Advent of Code – An annual event of Christmas-oriented programming challenges started December 2015.  
+Every year since then, beginning on the first day of December, a programming puzzle is published every day for
+twenty-five days.
+You can solve the puzzle and provide an answer using the language of your choice.
+
+## Project template
+
+This repository is based on the following project
+template - https://github.com/kotlin-hands-on/advent-of-code-kotlin-template
