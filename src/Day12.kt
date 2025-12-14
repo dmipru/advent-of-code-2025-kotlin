@@ -3,9 +3,9 @@ private const val GIFT_RECTANGLE_AREA: Int = 9
 /**
  * Input specific solution:
  * Every gift in my input fits in 3x3 rectangle, so has area = 9.
- * If all gift rectangles can be fit in tree space then all gifts can fit.
- * It does not pass the test input and tree sides are not checked to be a multiple of 3,
- * but luckily it gives accepted result for my puzzle input without solving actual bin packing problem.
+ * If all gift rectangles can fit in tree space then all gifts MAY fit.
+ * The solution gives MAY fit number of trees instead of exact yes or no,
+ * but luckily the MAY result for my puzzle input is accepted without solving actual bin packing problem.
  */
 fun main() {
     val input = readInput("Day12")
